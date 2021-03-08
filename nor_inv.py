@@ -8,9 +8,9 @@ def nor_inv(filename):
             print()
             print(f"{name.upper()}:") 
             print(f"   hostname: {ip}") 
-            print("   group:") 
+            print("   groups:") 
             site_abb = name.split("-") 
-            print(f"       - {site_abb[0].upper()}")
+            print(f"       - {site_abb[0].capitalize()}")
             print("   platform: 'ios'")
 
 if __name__ == '__main__':
