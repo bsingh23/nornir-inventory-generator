@@ -4,7 +4,8 @@ def nor_inv(filename):
         #Create a new list which contains tuple of hostname and ip-address  
         newlist = [tuple(value.split(" ")) for value in data]
         #Tuple unpacking for creating nornir inventory
-        for name,ip in newlist: 
+        for name,ip in newlist:
+            print()
             print(f"{name.upper()}:") 
             print(f"   hostname: {ip}") 
             print("   group:") 
