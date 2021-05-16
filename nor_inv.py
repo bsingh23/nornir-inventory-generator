@@ -1,4 +1,13 @@
-def nor_inv(filename): 
+def nor_inv(filename: str):
+    """
+    Takes filename as parameter and returns Nornir inventory
+    
+    Parameter:
+        filename (str): The name of file which contains device name and IP-Address
+    
+    Returns:
+        Nornir Inventory
+    """
     with open(filename) as f: 
         data = f.read().splitlines()
         #Create a new list which contains tuple of hostname and ip-address  
